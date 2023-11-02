@@ -1,25 +1,22 @@
 "use client"
-import { useState } from 'react'
-import Image from 'next/image'
 import Header from '@/components/Header'
 import FeaturesCard from '@/components/FeaturesCard'
-import DocumentUpload from '@/components/DocumentUpload'
+import DocumentUploadWithOCR from '@/components/DocumentUploadWithOCR'
 export default function Home() {
-  // const [uploadedDocument, setUploadedDocument] = useState(null);
 
-  // const handleDocumentUpload = (documentBuffer) => {
-    
-  //   setUploadedDocument(documentBuffer);
   return (
-    <div className="bg-gradient-to-r from-blue-200 to-yellow-200 min-h-screen flex items-center justify-center">
+    <div className="bg-gradient-to-r from-blue-200 to-yellow-200 min-h-screen items-center justify-center">
      <Header />
       
-      <div className="container mx-auto">
-        <div className="md:flex">
+      <div className="container my-10 mx-auto py-8">
+        <div className="md:flex justify-evenly">
+        <div className="md:w-1/2">
           <FeaturesCard />
-          <DocumentUpload />
         </div>
-        
+        <div className="md:w-1/2">
+        <DocumentUploadWithOCR />
+        </div>
+        </div>
       </div>
     </div>
   )
