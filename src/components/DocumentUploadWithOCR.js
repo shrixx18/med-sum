@@ -42,7 +42,7 @@ const DocumentUploadWithOCR = () => {
         setApiResponse(result);
       })
       .catch((error) => {
-        console.error('Error calling API:', error);
+        console.error('Error :', error);
       });
   };
 
