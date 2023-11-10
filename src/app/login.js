@@ -30,8 +30,11 @@ const LoginPage = () => {
   if (loggedInUser) {
     return (
         <div className="bg-gradient-to-r from-blue-200 to-yellow-200 max-h-full items-center justify-center">
-         <Header />   
+         <Header onLogout={logout} loggedInUser={loggedInUser}/> 
+         
+         
         <BannerCard />
+        
         <div className="container my-10 mx-auto py-8">
             <div className="md:flex justify-evenly">
             <div className="md:w-1/2">
@@ -96,14 +99,14 @@ const LoginPage = () => {
               <button
                 type="button"
                 onClick={() => login(email, password)}
-                className="bg-blue-500 text-white rounded p-2 m-2"
+                className="bg-blue-500 hover:bg-fuchsia-600 text-white rounded p-2 m-2"
               >
                 Login
               </button>
               <button
                 type="button"
                 onClick={register}
-                className="bg-green-500 text-white rounded p-2 m-2"
+                className="bg-green-500 hover:bg-green-700 text-white rounded p-2 m-2"
               >
                New user Register here 
               </button>
