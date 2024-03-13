@@ -6,6 +6,7 @@ const DocumentUploadWithOCR = () => {
   const [text, setText] = useState('');
   const [imageFile, setImageFile] = useState(null);
   const [apiResponse, setApiResponse] = useState(null);
+  
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -28,7 +29,6 @@ const DocumentUploadWithOCR = () => {
       inputs: text, 
     };
 
-    
     fetch("https://api-inference.huggingface.co/models/sshleifer/distilbart-cnn-12-6", {
       method: "POST",
       headers: {
@@ -39,11 +39,13 @@ const DocumentUploadWithOCR = () => {
     })
       .then((response) => response.json())
       .then((result) => {
-        setApiResponse(result);
+        //console.log(result)
+        setApiResponse(result[0].summary_text);
       })
       .catch((error) => {
         console.error('Error :', error);
       });
+
   };
 
   return (
@@ -75,7 +77,7 @@ const DocumentUploadWithOCR = () => {
 
       <button
         onClick={callAPI}
-        className="bg-blue-500 text-white rounded p-2 mt-4 hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300"
+        className=" bg-green-500 text-white rounded p-2 mt-4 hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300"
       >
         Summarize
       </button>

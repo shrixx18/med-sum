@@ -9,7 +9,7 @@ const BannerCard = () => {
       transition={{ duration: 0.5 }}
       className="bg-white rounded-lg shadow-lg p-4 md:p-8 md:flex items-center my-16"
     >
-      <div className="md:w-1/2">
+      <div className="md:w-1/2 w-auto h-auto">
         <Image
         src="/proimage.jpg"
         width={300}
