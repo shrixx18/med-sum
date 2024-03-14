@@ -3,7 +3,7 @@ import appwriteService from "@/appwrite/config";
 import useAuth from "@/context/useAuth";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React, {FormEvent, useState} from "react";
+import { useState } from "react";
 
 
 const Signup = () => {
@@ -51,7 +51,7 @@ const Signup = () => {
                         Sign In
                     </Link>
                 </p>
-                {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
+                {error && <p className="font-bold text-black mt-8 text-center">{error}</p>}
                 <form onSubmit={create} className="mt-8">
                     <div className="space-y-5">
                         <div>
