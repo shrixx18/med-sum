@@ -40,7 +40,7 @@ const SummaryFromPDF = () => {
   };
 
   return (
-    <div className='bg-white text-black rounded-md p-2 m-2 shadow-lg flex-col h-60 items-stretch'>
+    <div className='bg-white text-black rounded-md p-2 m-2 shadow-lg flex-col h-auto space-y-3 items-stretch'>
       <h1 className='items-end w-3/4 px-4 pb-2 font-bold text-lg '>Generate Summary from PDF</h1>
       <div className='items-end w-3/4 px-4 pb-2'>
         <p>
