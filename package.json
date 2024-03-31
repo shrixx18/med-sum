@@ -20,6 +20,7 @@
     "react-dom": "^18",
     "react-dropzone": "^14.2.3",
     "react-pdf": "^7.7.1",
+    "react-simple-image-slider": "^2.4.1",
     "tesseract.js": "^4.1.1"
   },
   "devDependencies": {

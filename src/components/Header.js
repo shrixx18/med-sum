@@ -11,9 +11,9 @@ function Header({loggedInUser,onLogout }) {
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-2xl font-semibold">Mediclaim Summarizer</div>
         <div className="">
-        <Link
+         <Link
                             href={"/logout"}
-                            className=" bg-blue-400 mx-2 rounded-xl px-6 py-3 inline-block hover:bg-black duration-150"
+                            className=" bg-blue-500 mx-3 rounded-xl px-6 py-3 inline-block hover:bg-black duration-150"
                         >
                             Logout
                         </Link>

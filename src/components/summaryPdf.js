@@ -40,19 +40,19 @@ const SummaryFromPDF = () => {
   };
 
   return (
-    <div className='bg-white text-black rounded-md p-2 m-2 shadow-lg flex-col items-stretch'>
+    <div className='bg-white text-black rounded-md p-2 m-2 shadow-lg flex-col h-60 items-stretch'>
       <h1 className='items-end w-3/4 px-4 pb-2 font-bold text-lg '>Generate Summary from PDF</h1>
       <div className='items-end w-3/4 px-4 pb-2'>
         <p>
-        <span>Upload your policy documents</span>
+        <span>⬆️Upload your policy documents</span>
         <br />
-        <span>Summarize the terms & conditions</span>
+        <span>🚀Summarize the terms & conditions</span>
         <br />
-        <span>Get precise and accurate asnwer in seconds</span>
+        <span>✅Get precise and accurate summary in seconds</span>
         <br />
         </p>
       </div>
-      <input type="file" onChange={handleFileChange} />
+      <input className=' p-2' type="file" onChange={handleFileChange} />
       {isLoading && <p>Generating summary...</p>}
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {summary && (
