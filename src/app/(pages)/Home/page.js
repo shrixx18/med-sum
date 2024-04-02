@@ -10,11 +10,11 @@ function Homee() {
     <div><div className=" bg-gradient-to-r from-blue-200 to-yellow-200 min-h-screen bg-cover items-center justify-center">
     <Header />
      <BannerCard />
-     <SummaryFromPDF />
+     <AnswerFromPDF />
      <br />
      <ScrollAnimate />
      <br />
-     <AnswerFromPDF />
+     <SummaryFromPDF />
      <br />
    </div></div>
   )
