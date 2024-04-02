@@ -121,16 +121,16 @@ const AnswerFromPDF = () => {
 
   return (
     <div className=' bg-white text-black rounded-md p-2 m-2 shadow-lg flex-col items-stretch'>
-    <h1 className=' text-lg font-bold'>Summarize or ask from policy</h1>
-    <div className='items-end w-3/4 px-4 pb-2'>
+    <h1 className=' text-lg font-bold'>Have querries regarding a policy ?</h1>
+    <div className='items-end w-3/4 px-4 space-y-2 pb-2'>
         <p>
-        <span>Upload your policy documents</span>
+        <span>⬆️Upload your policy documents</span>
         <br />
-        <span>Summarize the terms & conditions</span>
+        <span>↩️Ask your question</span>
         <br />
-        <span>Ask to explain any claim condition</span>
+        <span>✅Ask to explain any claim condition</span>
         <br />
-        <span>Get precise and accurate asnwer in seconds</span>
+        <span>🚀Get precise and accurate asnwer in seconds</span>
         <br />
         <span className=' text-amber-500 font-semibold'>Make sure that questions are in context of the document you upload !</span></p>
       </div>
