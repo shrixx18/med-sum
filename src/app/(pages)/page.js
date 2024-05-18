@@ -48,11 +48,11 @@ return (
                     </div>
                     <div className="w-full">
                         <h1 className="font-bold text-3xl mb-4 text-black">
-                            AI based  <span className="text-primary">mediclaim summarizer</span>
+                            AI based  <span className="text-primary">Smart Summarizer</span>
                         </h1>
                         <p className="text-black/60">
-                            Get an accurate and precise summary of your mediclaim policy's terms and condition
-                            powered by <span className=" text-green-500">DistillBERT model</span>
+                            Get your mediclaim and insurance policy's terms and condition summarized. 
+                           <br />Have questions ? Ask them from your document powered by <span className=" text-green-500">Langchain and BERT</span>
                         </p>
                     </div>
                 </div>

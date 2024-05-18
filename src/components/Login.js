@@ -31,11 +31,9 @@ const Login = () => {
 
     return (
         <div className="flex items-center justify-center w-full ">
-            <div className={`mx-auto w-full max-w-lg bg-green-400 rounded-xl p-10`}>
+            <div className={`mx-auto w-full max-w-lg bg-green-400 rounded-xl p-10 mt-10`}>
                 <div className="mb-2 flex justify-center">
-                    <span className="inline-block w-full max-w-[60px]">
-                        
-                    </span>
+                    
                 </div>
                 <h2 className="text-center text-2xl font-bold leading-tight text-black">
                     Sign in to your account
