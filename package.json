@@ -13,7 +13,7 @@
     "axios": "^1.7.4",
     "fastapi": "^0.0.8",
     "framer-motion": "^10.16.4",
-    "next": "^14.2.3",
+    "next": "^14.2.10",
     "pdf-parse": "^1.1.1",
     "pdfjs-dist": "^4.2.67",
     "react": "^18",
